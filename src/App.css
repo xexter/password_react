@@ -1,0 +1,129 @@
+body {
+  background-color: bisque;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFhAJ9FJS2wxpi7HTqAjqQBfyAsyI2wN_uFA&s');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  backdrop-filter: blur(50px);
+  font-family: Arial, sans-serif;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.settings label {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.settings input[type="number"] {
+  margin-left: 10px;
+  width: 50px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.password-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.password-box input {
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.copy-button {
+  padding: 10px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  background-color: #218838;
+}
+
+.strength {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.strength-bar {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  margin-left: 10px;
+}
+
+.strength-bar.weak {
+  background-color: #dc3545;
+}
+
+.strength-bar.fair {
+  background-color: #ffc107;
+}
+
+.strength-bar.good {
+  background-color: #28a745;
+}
+
+.strength-bar.strong {
+  background-color: #007bff;
+}
